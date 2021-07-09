@@ -17,4 +17,3 @@ This is a test project where I tinker with terraform.
 Destroying
 
 - Run `terraform destroy`
-- Then, `terraform apply`

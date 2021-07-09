@@ -14,11 +14,15 @@ provider "aws" {
   region  = "ap-south-1"
 }
 
+variable "subnet_id" {}
+
 resource "aws_instance" "zero_by_ar9" {
   ami           = "ami-0c1a7f89451184c8b"
   instance_type = "t2.micro"
-
+  
+  subnet_id = var.subnet_id
+  
   tags = {
-    Name = "test app"
+    Name = "testing another app"
   }
 }
